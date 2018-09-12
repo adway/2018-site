@@ -1,0 +1,24 @@
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        &copy; Adway S. Wadekar 2018
+      </p>
+      <p>Made with <i class="fas fa-heart"></i> & <i class="fas fa-utensils"></i> in the beautiful city of Boston, MA</p>
+      <p>adway [at] adway [dot] io</p>
+    </div>
+  </div>
+</footer>
+</body>
+<script type="text/javascript">
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#' + burger.dataset.target);
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+</script>
+
+</html>

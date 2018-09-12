@@ -1,0 +1,29 @@
+{% include header.html %}
+<section class="section">
+  <div class="container">
+    {%if page.url contains 'projects'%}
+    <a href="/projects" class="button is-link is-outlined" style="margin-bottom: 2em">
+      Back to Projects
+    </a> {% endif %} {%if page.url contains 'articles'%}
+    <a href="/articles" class="button is-link is-outlined" style="margin-bottom: 2em">
+      Back to Articles
+    </a> {% endif %}
+    <section class="hero is-dark is-bold is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title" style="text-align: center;">
+            {{page.title}}
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+  </div>
+  <div class="container text">
+    {{content}}
+  </div>
+</section>
+{% include footer.html %}

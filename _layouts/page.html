@@ -1,0 +1,20 @@
+{% include header.html %}
+<section class="hero is-dark is-bold is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1">
+        {{page.title}}
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="section" style="background-color: #4a4a4a; color: #fff; ">
+  <div class="container text about">
+    <div class="columns">
+      <div class="column" style="margin-bottom: 2em;">
+        {{content}}
+      </div>
+    </div>
+  </div>
+</section>
+{% include footer.html %}
