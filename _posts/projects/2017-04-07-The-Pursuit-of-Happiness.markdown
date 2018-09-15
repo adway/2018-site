@@ -42,7 +42,7 @@ for(k in 1:25){
 }
 ```
 ### Hellinger Distance
-```
+```R
 lifeEvents = read.csv("life_events.csv");
 # store data set
 counter <- numeric(25);
@@ -150,9 +150,6 @@ for(j in 1:25){
 hellingerSum <- 1/sqrt(2)*sqrt(hellingerSum)
 # Take the final sqrt and multiply by 1/sqrt 2. Do this to the whole equation.
 ```
-##Awards
-| Fair        | Award    
-| ------------- |-------------
-| Worcester Regional Science and Engineering Fair      | First Place
-| Massachusetts State Science and Engineering Fair | Third Place
-| Broadcom MASTERS National Science and Engineering Fair | Top 300 Masters
+## Awards
+
+This project won first place at the Worcester Regional Science and Engineering Fair, and third place at the Massachusetts State Science and Engineering Fair. I am honored to say that this project was placed as one of the top 300 in the United States, in the Broadcoam MASTERS National Science and Engineering Fair.

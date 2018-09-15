@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <title>Adway S. Wadekar</title>
+  <style>
+  .footer {
+    padding: 2em !important;
+  }
+
+  .fa-heart {
+    color: #a50104 !important;
+  }
+
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 8rem;
+    min-height: 100%;
+    margin-top: 52px;
+  }
+
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .text p {
+    margin-bottom: 1.3em;
+    text-align: justify;
+  }
+
+  .about a {
+    color: #a9c2b0 !important;
+  }
+  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+</head>
+
+<body>
+  <nav class="navbar is-dark is-fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/" style="font-weight:bold;">
+            adway s. wadekar
+          </a>
+        <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+        <span></span>
+        <span></span>
+        </span>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="/" class="navbar-item ">about</a>
+          <a href="/projects" class="navbar-item  is-active ">projects</a>
+          <a href="/articles" class="navbar-item ">articles</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section">
+  <div class="container">
+    <a href="/projects" class="button is-link is-outlined" style="margin-bottom: 2em">
+      Back to Projects
+    </a>
+    <section class="hero is-dark is-bold is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title" style="text-align: center;">
+            The Pursuit of Happiness
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+  </div>
+  <div class="container text markdown-body" style="margin-bottom: 5em">
+    <h2 id="about">About</h2>
+<p>This was my 2017 science fair project. This project had two goals. The first of which is to analze and compare, on an average, what life events make people particularly happy. The second obejctive of the project was to compare the similarity of life events. To complete this analysis, I used the R programming language. In R, I used the Hellinger distance, which lets you compare two discrete random variables, in my case, the distribution of happiness for life events.</p>
+<h2 id="code">Code</h2>
+<h3 id="averages">Averages</h3>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lifeEvents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"life_events.csv"</span><span class="p">);</span><span class="w">
+</span><span class="c1"># store data set</span><span class="w">
+</span><span class="n">counter</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">numeric</span><span class="p">(</span><span class="m">25</span><span class="p">);</span><span class="w">
+</span><span class="c1"># counter for valid responses for each life event</span><span class="w">
+</span><span class="n">totalHappiness</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">numeric</span><span class="p">(</span><span class="m">25</span><span class="p">);</span><span class="w">
+</span><span class="c1"># Added up all of the happiness levels for all of the respondents who answered.</span><span class="w">
+</span><span class="n">average</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">numeric</span><span class="p">(</span><span class="m">25</span><span class="p">);</span><span class="w">
+</span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">28</span><span class="o">:</span><span class="m">52</span><span class="p">){</span><span class="w">
+</span><span class="c1"># Cycles through all of the life events.</span><span class="w">
+  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10054</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="c1"># Cycles through all of the respondents.</span><span class="w">
+    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">-1</span><span class="p">)</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="n">counter</span><span class="w"> </span><span class="p">[</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">counter</span><span class="p">[</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># Increments the counter, j-27 to get back to the correct row of column, because life event data starts in the 28th row.</span><span class="w">
+      </span><span class="n">totalHappiness</span><span class="p">[</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">totalHappiness</span><span class="p">[</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">];</span><span class="w">
+</span><span class="c1"># Increments total happiness. j-27 for the same reason.      </span><span class="w">
+      
+    </span><span class="p">}</span><span class="w">
+    
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+
+</span><span class="k">for</span><span class="p">(</span><span class="n">k</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">25</span><span class="p">){</span><span class="w">
+  
+  </span><span class="n">average</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">=</span><span class="w"> </span><span class="n">totalHappiness</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">/</span><span class="n">counter</span><span class="p">[</span><span class="n">k</span><span class="p">];</span><span class="w">
+</span><span class="c1">#Standard average function. Total divided by the number of people.</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<h3 id="hellinger-distance">Hellinger Distance</h3>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lifeEvents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"life_events.csv"</span><span class="p">);</span><span class="w">
+</span><span class="c1"># store data set</span><span class="w">
+</span><span class="n">counter</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">numeric</span><span class="p">(</span><span class="m">25</span><span class="p">);</span><span class="w">
+</span><span class="c1"># counter for valid responses for each life event</span><span class="w">
+</span><span class="n">peoplePerLevel</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span><span class="p">);</span><span class="w">
+</span><span class="c1"># Counts number of people per happiness level - 10 rows by 25 columns</span><span class="w">
+</span><span class="n">distributionTable</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span><span class="p">);</span><span class="w">
+</span><span class="c1"># Distribution for each happiness level - 10 rows by 25 columns</span><span class="w">
+</span><span class="n">hellingerSum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span><span class="p">);</span><span class="w">
+</span><span class="c1"># Data frame to store the Hellinger distances for each life event.</span><span class="w">
+
+</span><span class="c1">#This double for loop calculates the number of people for each happiness level, for each life event.</span><span class="w">
+</span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">28</span><span class="o">:</span><span class="m">52</span><span class="p">){</span><span class="w">
+</span><span class="c1">#</span><span class="w">
+  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10054</span><span class="p">){</span><span class="w">
+</span><span class="c1"># Cycles through all of the respondents</span><span class="w">
+    </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">-1</span><span class="p">){</span><span class="w">
+</span><span class="c1"># Eliminates all of the missing responses in the counter variable      </span><span class="w">
+      </span><span class="n">counter</span><span class="p">[</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">counter</span><span class="p">[</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># Assigns the counter number found to the appropriate slot in the array. (Which life event)      </span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+        
+      </span><span class="p">}</span><span class="w">
+</span><span class="c1"># If a respondent gave 1 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.   </span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+        
+      </span><span class="p">}</span><span class="w">    
+</span><span class="c1"># If a respondent gave 2 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.</span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">3</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">3</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+        
+      </span><span class="p">}</span><span class="w">     
+</span><span class="c1"># If a respondent gave 3 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.</span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">4</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">4</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># If a respondent gave 4 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.        </span><span class="w">
+      </span><span class="p">}</span><span class="w">   
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">5</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">5</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># If a respondent gave 5 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">6</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">6</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># If a respondent gave 6 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">7</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">7</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">7</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># If a respondent gave 7 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.       </span><span class="w">
+      </span><span class="p">}</span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">8</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">8</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">8</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># If a respondent gave 8 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.      </span><span class="w">
+      </span><span class="p">}</span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">9</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">9</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">9</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># If a respondent gave 9 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.        </span><span class="w">
+      </span><span class="p">}</span><span class="w">
+      </span><span class="k">if</span><span class="p">(</span><span class="n">lifeEvents</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">10</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="m">10</span><span class="p">,</span><span class="n">j</span><span class="m">-27</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">
+        
+      </span><span class="p">}</span><span class="w">
+</span><span class="c1"># If a respondent gave 1 for life event j, in the matrix peoplePerLevel is incremented by 1. J will cycle from 1-25.</span><span class="w">
+      
+      
+      
+      
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="c1">#This double for loop calculates the percentage of people for each happiness level, for each life event. </span><span class="w">
+</span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">25</span><span class="p">){</span><span class="w">
+  
+  </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">){</span><span class="w">
+    
+    </span><span class="n">distributionTable</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">peoplePerLevel</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">/</span><span class="n">counter</span><span class="p">[</span><span class="n">j</span><span class="p">];</span><span class="w">
+    
+    
+    
+  </span><span class="p">}</span><span class="w">
+  
+  
+</span><span class="p">}</span><span class="w">
+</span><span class="c1"># Takes the number of people who had a happiness level of i for life event j, and divides it by the total number of people for life event j.</span><span class="w">
+</span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">25</span><span class="p">){</span><span class="w">
+  
+  </span><span class="n">k</span><span class="o">=</span><span class="n">j</span><span class="m">+1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># Makes the starting number for the second life event of the pair of life events.</span><span class="w">
+  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">k</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">25</span><span class="p">){</span><span class="w">
+  
+    </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">){</span><span class="w">
+    
+    </span><span class="n">hellingerSum</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">hellingerSum</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">distributionTable</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">])</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">sqrt</span><span class="p">(</span><span class="n">distributionTable</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]))</span><span class="o">^</span><span class="m">2</span><span class="w">
+</span><span class="c1"># Equation of the Hellinger Distance - Take the sqrt of percentage of people who chose level "i" for life event j</span><span class="w">
+</span><span class="c1"># subtract it from percentage of people who chose level "i" for life event k.</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  </span><span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="m">+1</span><span class="p">;</span><span class="w">
+</span><span class="c1"># Increment k by 1 to generate a new pair. ie, 1,2 to 1,3</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">hellingerSum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">/</span><span class="nf">sqrt</span><span class="p">(</span><span class="m">2</span><span class="p">)</span><span class="o">*</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">hellingerSum</span><span class="p">)</span><span class="w">
+</span><span class="c1"># Take the final sqrt and multiply by 1/sqrt 2. Do this to the whole equation.</span><span class="w">
+</span></code></pre></div></div>
+<h2 id="awards">Awards</h2>
+
+<p>This project won first place at the Worcester Regional Science and Engineering Fair, and third place at the Massachusetts State Science and Engineering Fair. I am honored to say that this project was placed as one of the top 300 in the United States, in the Broadcoam MASTERS National Science and Engineering Fair.</p>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        &copy; Adway S. Wadekar 2018
+      </p>
+      <p>Made with <i class="fas fa-heart"></i> & <i class="fas fa-utensils"></i> in the beautiful city of Boston, MA</p>
+      <p>adway [at] adway [dot] io</p>
+    </div>
+  </div>
+</footer>
+</body>
+<script type="text/javascript">
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#' + burger.dataset.target);
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+</script>
+
+</html>
