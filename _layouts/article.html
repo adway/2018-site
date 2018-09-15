@@ -1,0 +1,18 @@
+{% include header.html %}
+<section class="section">
+  <div class="container" style="margin-bottom: 3em">
+    <a href="/articles" class="button is-link is-outlined is-primary" style="margin-bottom: 1.5em">
+      Back to Articles
+    </a>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent is-12">
+        <div class="tile is-child box">
+          <p class="title">{{page.title}}</p>
+          <p class="subtitle">{{page.author}}</p>
+          <div class="text">{{content}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include footer.html %}

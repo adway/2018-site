@@ -1,10 +1,14 @@
 ---
-layout: item
+layout: article
 title:  "Westborough Community Land Trust sponsors Earth Day cleanup"
 date:   2018-05-08 17:08:35 -0400
 categories: articles
+author: Adway S. Wadekar
 
 ---
+
+![children](https://www.communityadvocate.com/wp-content/uploads/W-Earth-Day-1.jpg)
+
 Westborough – Earth Day, which is held annually on April 22, marks the anniversary of a modern movement that started in 1970. Its primary purpose was to raise awareness about how human actions pollute our environment and threaten the survival of our planet. Since its inception, the day is recognized across the world through a number of activities that include picking up plastic, glass, and other litter.
 
 Keeping with its tradition, the Westborough Community Land Trust (WCLT) organized the local Earth Day litter cleanup for April 21. Early Bird volunteers gathered at two locations: the Westborough Plaza traffic island, and at the corner of Bellows Road and Rt. 30. A larger group of volunteers gathered at 9:30 a.m. at the Bay State Commons Green. With disposable trash bags, gloves, and maps of clean up locations, volunteers dispersed all across the town to pick up the offending items.

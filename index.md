@@ -1,6 +1,7 @@
 ---
 layout: page
 title: about me
+tagline: [student, developer, writer, photographer]
 permalink: /
 ---
 

@@ -1,0 +1,27 @@
+{% include header.html %}
+<section class="hero is-dark is-bold is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1">
+        {{page.title}}
+      </h1>
+      <h2 class="subtitle">
+        {{page.tagline}}
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  {%for item in site.posts %} {%if page.url == '/articles'%} {% if item.path contains 'articles'%}
+  <div class="container" style="margin-bottom: 2em;">
+    <div class="columns">
+      <div class="column">
+        <h1 class="subtitle is-3" style="font-size: 1.8rem;">{{item.title}}</h1>
+        <p class="subtitle is-5">{{item.date | date: '%B %Y'}}</p>
+        <a class="button is-outlined is-link" href="{{item.url}}">View Article</a>
+      </div>
+    </div>
+  </div>
+  {% endif %} {%endif%} {%endfor%}
+</section>
+{% include footer.html %}
