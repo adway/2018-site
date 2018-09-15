@@ -6,6 +6,7 @@ categories: articles
 author: Adway S. Wadekar
 
 ---
+![The Ravenclaw Winning Team](https://www.communityadvocate.com/wp-content/uploads/W-Harry-Potter-bday-1-300x225.jpg)
 
 Westborough – July 31 marks J.K. Rowling’s birthday. The date also marks the birthday of her world-famous and beloved fictional character, Harry Potter. To celebrate this popular character, the Westborough Public Library threw a birthday party for Harry, complete with games, scavenger hunts, challenges, activities, and food. Harry Potter series enthusiasts, mostly of middle-school and high-school age, arrived at the Westborough Public Library meeting room, and experienced a plethora of fun.
 
@@ -15,3 +16,4 @@ As the mix-and-mingle component of the event drew to a close, the participants t
 
 Ravenclaw won the final part of the challenge which entailed six riddles, and became the overall winners. Each member of the Ravenclaw house was sent home with a king-size Hershey’s chocolate bar.
 
+![Harry's Birthday Cake](https://www.communityadvocate.com/wp-content/uploads/W-Harry-Potter-bday-2-300x200.jpg)
