@@ -1,7 +1,7 @@
 ---
 layout: article
-title:  "Westborough Community Land Trust sponsors Earth Day cleanup"
-date:   2018-05-08 17:08:35 -0400
+title:  Westborough students shine at Congressional art competition
+date:   2018-06-22 17:08:35 -0400
 categories: articles
 author: Adway S. Wadekar
 
