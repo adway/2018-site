@@ -1,3 +1,12 @@
+---
+layout: article
+title:  "Westborough Community Land Trust sponsors Earth Day cleanup"
+date:   2018-05-08 17:08:35 -0400
+categories: articles
+author: Adway S. Wadekar
+
+---
+
 ![Winners of Competition](/assets/images/art.jpg)
 
 Westborough – For the first time in many years, Westborough High School was represented at the Artistic Discovery Competition sponsored by the Congressional Institute. Of the eight Westborough students who entered the competition, Alexandria Tracchi received first place and Tulika Roy received third place in the photography category.
