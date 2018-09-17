@@ -7,7 +7,11 @@ author: Adway S. Wadekar
 
 ---
 
-![Winners of Competition](https://www.communityadvocate.com/wp-content/uploads/Sch-W-art-competition-web-300x176.jpg)
+<center>
+	<img src="https://www.communityadvocate.com/wp-content/uploads/Sch-W-art-competition-web-300x176.jpg" alt="">		
+</center>
+
+
 
 Westborough – For the first time in many years, Westborough High School was represented at the Artistic Discovery Competition sponsored by the Congressional Institute. Of the eight Westborough students who entered the competition, Alexandria Tracchi received first place and Tulika Roy received third place in the photography category.
 

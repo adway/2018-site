@@ -1,0 +1,46 @@
+  .footer {
+    padding: 2em !important;
+  }
+
+  .fa-heart {
+    color: #a50104 !important;
+  }
+
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 8rem;
+    min-height: 100%;
+    margin-top: 52px;
+  }
+
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .text p {
+    margin-bottom: 1.3em;
+    text-align: justify;
+  }
+
+  .about a {
+    color: #a9c2b0 !important;
+  }
+
+  .aligncenter {
+    text-align: center;
+  }

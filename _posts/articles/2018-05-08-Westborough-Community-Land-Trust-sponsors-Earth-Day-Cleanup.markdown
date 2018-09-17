@@ -7,7 +7,9 @@ author: Adway S. Wadekar
 
 ---
 
-![children](https://www.communityadvocate.com/wp-content/uploads/W-Earth-Day-1.jpg)
+<center>
+	<img src="https://www.communityadvocate.com/wp-content/uploads/W-Earth-Day-1.jpg" alt="">
+</center>
 
 Westborough – Earth Day, which is held annually on April 22, marks the anniversary of a modern movement that started in 1970. Its primary purpose was to raise awareness about how human actions pollute our environment and threaten the survival of our planet. Since its inception, the day is recognized across the world through a number of activities that include picking up plastic, glass, and other litter.
 
