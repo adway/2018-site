@@ -1,3 +1,12 @@
+---
+layout: article
+title:  "Hundreds come out in support of Mass. Down Syndrome Congress’ Buddy Walk"
+date:   2018-09-26 17:08:35 -0400
+categories: articles
+author: Adway S. Wadekar
+
+---
+
 Westborough – Since 1995, the Buddy Walk program has been at the forefront of advocacy for Down syndrome in the United States. The Massachusetts Down Syndrome Congress (MDSC) hosts three established walks throughout the year, bringing over 4,500 people together to promote acceptance and inclusion of people with Down syndrome in the commonwealth. In honor of the upcoming Down Syndrome Awareness Month in October, the Congress hosted its sixth-annual Buddy Walk and Harvest Fair in Westborough Sept. 16. The celebration’s purpose was two-fold: to raise awareness about Down syndrome, as well as to raise funds to support the MDSC’s programs and advocacy.
 
 The Buddy Walk was fall-themed, bringing approximately 700 people together, including individuals with Down syndrome, and their friends and families for a day filled with fun. The event included a 1-mile walk in a classic New England farm setting against the backdrop of Lake Chauncy. It also featured hay rides for the whole family, raffle with a chance to win great prizes, arts and crafts, field games, DJ Dan McLean, and appearances by the Westborough Fire and Police Departments. Different food vendors were present, and each walker received Uhlman’s Ice Cream.
