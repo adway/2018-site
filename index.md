@@ -1,7 +1,7 @@
 ---
 layout: page
 title: about me
-tagline: [student, developer, writer, photographer]
+tagline: [I'm passionate about learning about anything and everything.]
 permalink: /
 ---
 
