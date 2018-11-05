@@ -28,5 +28,3 @@ fields:
   type: text
   hidden: false
   default: ''
-pages:
-- _posts/articles/2018-11-05-article.md
