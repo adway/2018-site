@@ -3,11 +3,12 @@ title: India Society of Worcester celebrates Diwali at Worcester Art Museum
 date: 2018-11-19 20:50:25 -0500
 layout: article
 categories:
-- article
+  - article
 author: Adway S. Wadekar
-
+advocateLink: https://www.communityadvocate.com/2018/11/19/india-society-of-worcester-celebrates-diwali-at-worcester-art-museum/
 ---
-![](https://www.communityadvocate.com/wp-content/uploads/R-Diwali-at-WAM-rs.jpg "Diwali is celebrated at the Worcester Art Museum. Photo/Courtesy Worcester Art Museum")
+
+![](https://www.communityadvocate.com/wp-content/uploads/R-Diwali-at-WAM-rs.jpg 'Diwali is celebrated at the Worcester Art Museum. Photo/Courtesy Worcester Art Museum')
 
 Worcester – The India Society of Worcester hosted its third annual Diwali celebration in conjunction with the Worcester Art Museum Nov. 4. The Worcester community gathered together to celebrate the mission of the “festival of lights” – “dispel darkness and envision an era of peace, prosperity and happiness”.
 

@@ -1,10 +1,10 @@
 ---
 layout: article
-title:  Westborough Library throws a birthday party for ‘Harry Potter’
-date:   2018-07-31 17:08:35 -0400
+title: Westborough Library throws a birthday party for ‘Harry Potter’
+date: 2018-07-31 17:08:35 -0400
 categories: articles
 author: Adway S. Wadekar
-
+advocateLink: https://www.communityadvocate.com/2018/08/08/243504/
 ---
 
 <center>

@@ -1,10 +1,10 @@
 ---
 layout: article
-title:  "Hundreds come out in support of Mass. Down Syndrome Congress’ Buddy Walk"
-date:   2018-09-26 17:08:35 -0400
+title: 'Hundreds come out in support of Mass. Down Syndrome Congress’ Buddy Walk'
+date: 2018-09-26 17:08:35 -0400
 categories: articles
 author: Adway S. Wadekar
-
+advocateLink: https://www.communityadvocate.com/2018/09/26/hundreds-come-out-in-support-of-mass-down-syndrome-congress-buddy-walk/
 ---
 
 <center>
@@ -19,4 +19,4 @@ All of the funds raised through the Buddy Walk program directly support MDSC’s
 
 The MDSC is planning two other Buddy Walks; Buddy Walk by the sea in Village Green, Hyannis on Saturday, Sept. 29, and Buddy Walk and Family Festival by Lake Quannapowitt in Wakefield on Sunday, Oct. 7.
 
-For more information visit [msdc.org](http://mdsc.org){:target="_blank"}.
+For more information visit [msdc.org](http://mdsc.org){:target="\_blank"}.
